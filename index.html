@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro Tecnológico Virelix es una institución especializada en ofrecer soluciones digitales, capacitación y servicios tecnológicos para estudiantes, emprendedores y pequeñas organizaciones.">
+    <meta name="keywords" content="desarrollo web, software, soporte técnico, redes, bases de datos, capacitación tecnológica">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Centro Tecnológico Virelix - Tecnología que transforma tus ideas</title>    
+</head>
+<body>
+    <header>
+        <h1>Centro Tecnológico Virelix</h1>
+        <p>Centro de <strong>soluciones digitales</strong></p>
+        <p>Tecnología que transforma tus ideas</p>
+        <!-- Aquí se mostrará el reloj -->
+        <h4 id="reloj"></h4>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#formulario">Formulario</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="card">
+            <h2>Bienvenido a Virelix</h2>
+            <p>La tecnología puede convertir una idea sencilla en una gran solución.</p>
+            <h3>Misión</h3>
+            <p>Brindar servicios y soluciones tecnológicas accesibles...</p>
+            <h3>Visión</h3>
+            <p>Ser una institución reconocida por impulsar el aprendizaje tecnológico...</p>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios">
+            <h2>Servicios Tecnológicos</h2>
+            <div class="servicios-grid">
+                <article class="card">
+                    <h3>1. Desarrollo de páginas web</h3>
+                    <p>Creamos páginas web modernas y funcionales...</p>
+                </article>
+                <article class="card">
+                    <h3>2. Desarrollo de software</h3>
+                    <p>Diseñamos soluciones de software sencillas...</p>
+                </article>
+                <article class="card">
+                    <h3>3. Soporte y mantenimiento de equipos</h3>
+                    <p>Ofrecemos servicios de revisión y mantenimiento...</p>
+                </article>
+                <article class="card">
+                    <h3>4. Diseño y administración de bases de datos</h3>
+                    <p>Apoyamos en la creación y organización de bases de datos...</p>
+                </article>
+                <article class="card">
+                    <h3>5. Instalación y configuración de redes</h3>
+                    <p>Brindamos apoyo para diseñar y configurar redes básicas...</p>
+                </article>
+                <article class="card">
+                    <h3>6. Capacitación tecnológica</h3>
+                    <p>Impartimos cursos y asesorías dirigidos a personas interesadas...</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Nosotros -->
+        <section id="nosotros" class="card">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos un equipo ficticio de estudiantes y profesionales...</p>
+        </section>
+
+        <!-- Promoción -->
+        <section id="promocion" class="card">
+            <h2>Promoción especial: Paquete Impulso Digital</h2>
+            <p>¡Convierte tu idea en un proyecto digital!...</p>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="card">
+            <h2>Contacto</h2>
+            <p><strong>Dirección:</strong> Avenida Circuito Nova 1500...</p>
+            <p><strong>Teléfono:</strong> +52 (000) 482-7600</p>
+            <p><strong>Correo electrónico:</strong> contacto@virelix.example</p>
+            <h3>Horario de atención</h3>
+            <p>Lunes a viernes: 9:00 a. m. – 7:00 p. m.<br>
+            Sábados: 10:00 a. m. – 2:00 p. m.<br>
+            Domingos: Cerrado</p>
+        </section>
+
+        <!-- Formulario separado en tarjeta -->
+        <section id="formulario" class="card">
+            <h2>Envíanos un mensaje</h2>
+            <form id="contactoForm" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <!-- Menú desplegable dentro del formulario -->
+                <label for="servicio">Selecciona un servicio:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">-- Elige una opción --</option>
+                    <option value="web">Desarrollo de páginas web</option>
+                    <option value="software">Desarrollo de software</option>
+                    <option value="soporte">Soporte y mantenimiento de equipos</option>
+                    <option value="bd">Diseño y administración de bases de datos</option>
+                    <option value="redes">Instalación y configuración de redes</option>
+                    <option value="capacitacion">Capacitación tecnológica</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 Centro Tecnológico Virelix. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

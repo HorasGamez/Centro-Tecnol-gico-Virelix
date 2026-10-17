@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #3aa6ee, #00bcd4, #7b1fa2);
+    color: #fff;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #3aa6ee, #00bcd4);
+    color: white;
+    text-align: center;
+    /* padding: 3rem 1rem; /* más espacio arriba y abajo */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontalmente */
+    justify-content: center; /* centra verticalmente */
+    position: sticky; /* siempre visible */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* sombra estética */
+}
+
+/* Menú fijo y estético */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #7b1fa2;
+    
+    left: 0;
+    width: 100%;
+   
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* sombra estética */
+}
+
+nav a {
+    color: #00e5ff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3aa6ee;
+    border-radius: 5px;
+}
+
+/* Ajuste para que el contenido no quede debajo del menú */
+main {
+    margin-top: 100px; /* espacio para el menú fijo */
+}
+
+/* Tarjetas generales */
+.card {
+    background: rgba(255,255,255,0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Grid de servicios */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Formulario en tarjeta */
+form {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3aa6ee;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #00bcd4, #7b1fa2);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
